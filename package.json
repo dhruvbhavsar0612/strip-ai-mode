@@ -1,6 +1,6 @@
 {
   "name": "strip-ai-mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Dev tooling for the No AI Overviews for Google Search extension. The extension itself has no runtime dependencies.",
   "scripts": {
