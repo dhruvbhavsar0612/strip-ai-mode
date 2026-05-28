@@ -15,6 +15,9 @@ desktop.ini
 dist/
 build/
 
+# Node dev tooling
+node_modules/
+
 # Python (icon generator)
 __pycache__/
 *.pyc

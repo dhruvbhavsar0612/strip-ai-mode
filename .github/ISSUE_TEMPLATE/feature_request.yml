@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest an idea or improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: I'm frustrated when...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: It would be great if the extension could...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: I also thought about...
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      description: This extension's single purpose is removing AI Overviews from Google Search.
+      options:
+        - label: I understand larger ideas may be discussed before implementation.
+          required: true

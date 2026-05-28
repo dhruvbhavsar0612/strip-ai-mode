@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/dhruvbhavsar0612/strip-ai-mode/discussions
+    about: Ask questions and discuss ideas that are not bug reports or feature requests.

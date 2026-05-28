@@ -1,0 +1,53 @@
+name: Bug report
+description: Report something that is not working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to file a bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: When I search for X, the AI Overview still appears...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to google.com
+        2. Search for "..."
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: example-url
+    attributes:
+      label: Example search URL
+      description: The Google search URL where you saw the problem (remove anything private).
+      placeholder: https://www.google.com/search?q=...
+  - type: input
+    id: chrome-version
+    attributes:
+      label: Chrome version
+      placeholder: e.g. 142.0.0.0
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Found on chrome://extensions or in manifest.json.
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: checkboxes
+    id: toggle-on
+    attributes:
+      label: Confirmation
+      options:
+        - label: The extension toggle was ON when this happened.
+          required: true
