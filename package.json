@@ -5,7 +5,8 @@
   "description": "Dev tooling for the No AI Overviews for Google Search extension. The extension itself has no runtime dependencies.",
   "scripts": {
     "lint": "eslint .",
-    "validate": "web-ext lint --source-dir . --ignore-files dist/** node_modules/**"
+    "validate": "web-ext lint --source-dir . --ignore-files dist/** node_modules/**",
+    "preview-site": "npx -y browser-sync start --server website --files \"website/**/*\""
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

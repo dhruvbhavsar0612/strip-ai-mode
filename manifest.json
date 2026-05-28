@@ -36,8 +36,15 @@
     "*://*.google.ru/*",
     "*://*.google.se/*"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "strip-ai-mode@dhruvbhavsar0612",
+      "strict_min_version": "113.0"
+    }
+  },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
   },
   "action": {
     "default_popup": "popup/popup.html",

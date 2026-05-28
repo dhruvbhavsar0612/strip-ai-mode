@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No AI Overviews for Google Search — Reclaim the Classic Web Search</title>
+    <meta name="description" content="Tired of AI Overviews taking over your Google results? Strip them out instantly and get back the classic, fast list of links with this lightweight, privacy-first browser extension." />
+    
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="icons/icon48.png" />
+  </head>
+  <body>
+    <!-- Soft Matte Ambient Spotlight -->
+    <div class="glow-spotlight"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <img src="icons/icon48.png" alt="No AI Overviews Logo" class="logo-img" />
+          <span class="logo-text">No AI Overviews</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#demo">Interactive Demo</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#install" class="btn btn-outline">Install Guide</a>
+          <a href="https://github.com/dhruvbhavsar0612/strip-ai-mode" target="_blank" rel="noopener" class="github-link" aria-label="GitHub Repository">
+            <svg class="icon-github" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="badge-container">
+          <span class="hero-badge">⚡ 100% Client-Side & Privacy-First</span>
+        </div>
+        <h1 class="hero-title">
+          Reclaim Google Search. <span>No AI Overviews.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Instantly bypass heavy, slow AI-generated results. Reclaim the classic, reliable list of links with a single click.
+        </p>
+        <div class="hero-ctas">
+          <a href="#install" class="btn btn-primary">Get the Extension</a>
+          <a href="https://github.com/dhruvbhavsar0612/strip-ai-mode" target="_blank" rel="noopener" class="btn btn-secondary">
+            View Source on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Tile Marquee Banner Show -->
+    <section class="banner-section">
+      <div class="banner-container">
+        <!-- Static Chrome header to embed image beautifully -->
+        <div class="chrome-header">
+          <div class="chrome-dots">
+            <div class="chrome-dot red"></div>
+            <div class="chrome-dot yellow"></div>
+            <div class="chrome-dot green"></div>
+          </div>
+          <div class="chrome-tabs">
+            <div class="chrome-tab active">
+              <img src="icons/icon48.png" alt="" class="chrome-tab-favicon" />
+              <span class="chrome-tab-title">No AI Overviews for Google Search</span>
+            </div>
+          </div>
+        </div>
+        <img src="assets/marquee_banner.png" alt="No AI Overviews Promo Marquee Banner" class="marquee-banner-img" />
+      </div>
+    </section>
+
+    <!-- Before/After Interactive Demo -->
+    <section id="demo" class="demo-section">
+      <div class="section-header">
+        <h2 class="section-title">See the Difference</h2>
+        <p class="section-desc">Drag the slider horizontally to compare the cluttered search layout with the classic list of Web results.</p>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="comparison-slider">
+          <!-- BEFORE STATE (Underneath, Cluttered with AI Overview) -->
+          <div class="slide-before">
+            <div class="chrome-mockup">
+              <!-- Chrome Header -->
+              <div class="chrome-header">
+                <div class="chrome-dots">
+                  <div class="chrome-dot red"></div>
+                  <div class="chrome-dot yellow"></div>
+                  <div class="chrome-dot green"></div>
+                </div>
+                <div class="chrome-tabs">
+                  <div class="chrome-tab active">
+                    <img src="icons/icon48.png" alt="" class="chrome-tab-favicon" />
+                    <span class="chrome-tab-title">how to bake sourdough bread - Google Search</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Chrome Address Bar -->
+              <div class="chrome-bar">
+                <div class="chrome-nav">
+                  <span class="chrome-nav-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                  </span>
+                  <span class="chrome-nav-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                  </span>
+                  <span class="chrome-nav-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                  </span>
+                </div>
+                <div class="chrome-address">
+                  <svg class="chrome-lock" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span class="chrome-address-text">
+                    <span class="chrome-address-domain">google.com</span><span class="chrome-address-path">/search?q=how+to+bake+sourdough+bread</span>
+                  </span>
+                </div>
+              </div>
+              <!-- Webpage Viewport -->
+              <div class="chrome-viewport">
+                <!-- Search bar row -->
+                <div class="google-search-bar-row">
+                  <div class="google-logo">
+                    <span style="color: #4285F4">G</span><span style="color: #EA4335">o</span><span style="color: #FBBC05">o</span><span style="color: #4285F4">g</span><span style="color: #34A853">l</span><span style="color: #EA4335">e</span>
+                  </div>
+                  <div class="google-search-input-wrapper">
+                    <span class="google-search-text">how to bake sourdough bread</span>
+                    <div class="google-search-icons">
+                      <svg class="search-input-icon" viewBox="0 0 24 24"><path fill="#4285f4" d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path fill="#34a853" d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+                      <svg class="search-input-icon" viewBox="0 0 24 24"><path fill="#4285f4" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Filters Bar -->
+                <div class="google-filters-row">
+                  <div class="google-filter active-all">
+                    <span class="filter-item">🔍 All</span>
+                  </div>
+                  <div class="google-filter">
+                    <span class="filter-item">📰 Web</span>
+                  </div>
+                  <div class="google-filter">
+                    <span class="filter-item">🖼️ Images</span>
+                  </div>
+                  <div class="google-filter">
+                    <span class="filter-item">📺 Videos</span>
+                  </div>
+                </div>
+                <!-- Search Results -->
+                <div class="google-results">
+                  <!-- Massive AI Overview Panel -->
+                  <div class="ai-overview-panel">
+                    <div class="ai-header">
+                      <svg class="icon-sparkle" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+                      </svg>
+                      <span>AI Overview</span>
+                    </div>
+                    <p class="ai-text">
+                      Baking sourdough bread involves activating wild yeast and lactic acid bacteria in a flour-and-water starter. The standard process spans 24-36 hours:
+                    </p>
+                    <ul class="ai-list">
+                      <li><strong>Feed Starter:</strong> Mix equal parts flour, water, and starter 4-12 hours prior to mixing.</li>
+                      <li><strong>Autolyse & Mix:</strong> Rest flour and water, then incorporate starter and salt.</li>
+                      <li><strong>Bulk Fermentation:</strong> Perform stretch-and-folds every 30 minutes for 3-4 hours.</li>
+                      <li><strong>Cold Proof:</strong> Retard shaped dough in refrigerator for 12-16 hours for complex flavor.</li>
+                    </ul>
+                    <p class="ai-text-footer">
+                      * Results synthesized from web sources and may contain inaccuracies.
+                    </p>
+                    <div class="ai-citations">
+                      <div class="citation-card"><span>Sourdough 101...</span></div>
+                      <div class="citation-card"><span>Perfect Loaf...</span></div>
+                      <div class="citation-card"><span>King Arthur...</span></div>
+                    </div>
+                  </div>
+
+                  <!-- First organic link pushed way down -->
+                  <div class="organic-link pushed-down">
+                    <div class="link-url">https://www.theperfectloaf.com > sourdough-bread-recipe</div>
+                    <h3 class="link-title">Sourdough Bread Recipe - The Perfect Loaf</h3>
+                    <p class="link-snippet">A detailed step-by-step guide to baking sourdough bread at home, including hydration, starter maintenance, and baking tips...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AFTER STATE (Overlay, Clean list of links) -->
+          <div class="slide-after">
+            <div class="chrome-mockup">
+              <!-- Chrome Header -->
+              <div class="chrome-header">
+                <div class="chrome-dots">
+                  <div class="chrome-dot red"></div>
+                  <div class="chrome-dot yellow"></div>
+                  <div class="chrome-dot green"></div>
+                </div>
+                <div class="chrome-tabs">
+                  <div class="chrome-tab active">
+                    <img src="icons/icon48.png" alt="" class="chrome-tab-favicon" />
+                    <span class="chrome-tab-title">how to bake sourdough bread - Google Search</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Chrome Address Bar -->
+              <div class="chrome-bar">
+                <div class="chrome-nav">
+                  <span class="chrome-nav-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                  </span>
+                  <span class="chrome-nav-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                  </span>
+                  <span class="chrome-nav-btn">
+                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                  </span>
+                </div>
+                <div class="chrome-address">
+                  <svg class="chrome-lock" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span class="chrome-address-text">
+                    <span class="chrome-address-domain">google.com</span><span class="chrome-address-path">/search?q=how+to+bake+sourdough+bread</span><span class="chrome-address-param">&amp;udm=14</span>
+                  </span>
+                </div>
+              </div>
+              <!-- Webpage Viewport -->
+              <div class="chrome-viewport">
+                <!-- Search bar row -->
+                <div class="google-search-bar-row">
+                  <div class="google-logo">
+                    <span style="color: #4285F4">G</span><span style="color: #EA4335">o</span><span style="color: #FBBC05">o</span><span style="color: #4285F4">g</span><span style="color: #34A853">l</span><span style="color: #EA4335">e</span>
+                  </div>
+                  <div class="google-search-input-wrapper">
+                    <span class="google-search-text">how to bake sourdough bread</span>
+                    <div class="google-search-icons">
+                      <svg class="search-input-icon" viewBox="0 0 24 24"><path fill="#4285f4" d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path fill="#34a853" d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+                      <svg class="search-input-icon" viewBox="0 0 24 24"><path fill="#4285f4" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Filters Bar (Web is now active!) -->
+                <div class="google-filters-row">
+                  <div class="google-filter">
+                    <span class="filter-item">🔍 All</span>
+                  </div>
+                  <div class="google-filter active-web">
+                    <span class="filter-item">📰 Web</span>
+                  </div>
+                  <div class="google-filter">
+                    <span class="filter-item">🖼️ Images</span>
+                  </div>
+                  <div class="google-filter">
+                    <span class="filter-item">📺 Videos</span>
+                  </div>
+                </div>
+                <!-- Search Results (Instant Web Results) -->
+                <div class="google-results">
+                  <!-- Organic Link 1 -->
+                  <div class="organic-link">
+                    <div class="link-url">https://www.theperfectloaf.com > sourdough-bread-recipe</div>
+                    <h3 class="link-title">Sourdough Bread Recipe - The Perfect Loaf</h3>
+                    <p class="link-snippet">A detailed step-by-step guide to baking sourdough bread at home, including hydration, starter maintenance, and baking tips...</p>
+                  </div>
+                  <!-- Organic Link 2 -->
+                  <div class="organic-link">
+                    <div class="link-url">https://www.kingarthurbaking.com > recipes</div>
+                    <h3 class="link-title">Easy Sourdough Bread For Beginners - King Arthur Baking</h3>
+                    <p class="link-snippet">This easy sourdough bread recipe is perfect for beginners. Learn how to mix, shape, and bake a crusty, flavorful sourdough boule at home with simple steps.</p>
+                  </div>
+                  <!-- Organic Link 3 -->
+                  <div class="organic-link">
+                    <div class="link-url">https://www.thekitchn.com > sourdough-bread-step-by-step</div>
+                    <h3 class="link-title">How to Make Sourdough Bread | Kitchn</h3>
+                    <p class="link-snippet">Baking sourdough bread at home can seem intimidating, but this recipe breaks it down into simple, manageable steps with photos and video guides.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-handle">
+            <div class="slider-arrow">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z" transform="rotate(90 12 12)"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Benefits Features Grid -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <h2 class="section-title">Why Use This Extension?</h2>
+        <p class="section-desc">Get your classic Google Search experience back without sacrificing speed, privacy, or reliability.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Blazing Fast Search</h3>
+          <p>By forcing Web-only results, Google skips the heavy client-side JavaScript rendering of AI overviews. Pages load noticeably faster and use less browser memory.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3>100% Privacy Focused</h3>
+          <p>The extension requires zero accounts, zero registrations, and collects absolutely no data. All redirection logic runs completely on your local device.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Bulletproof Engine</h3>
+          <p>Unlike scraper extensions that inject custom CSS/JS scripts to hide HTML blocks, this uses Chrome's native <code>declarativeNetRequest</code> API to filter search parameters before page load. It never breaks when Google tweaks page layouts.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.36 6.64a9 9 0 1 1-12.73 0"/>
+              <line x1="12" y1="2" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3>One-Click Global Switch</h3>
+          <p>Need AI results for a particular query? Toggle the extension on/off seamlessly using the quick toolbar action popup. It also elegantly ignores Google Images and custom AI-Mode tabs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive How It Works Section -->
+    <section id="how-it-works" class="works-section">
+      <div class="section-header">
+        <h2 class="section-title">How It Works Under the Hood</h2>
+        <p class="section-desc">The extension seamlessly guides your browser to Google's official, underlying classic layout.</p>
+      </div>
+
+      <div class="url-visualizer-card">
+        <div class="url-block origin-url">
+          <span class="url-label">Standard Google Query:</span>
+          <div class="url-bar">
+            <span class="domain">https://www.google.com</span><span class="path">/search?q=sourdough+bread</span>
+          </div>
+        </div>
+
+        <div class="redirect-arrow-container">
+          <div class="redirect-arrow">Redirect via declarativeNetRequest</div>
+        </div>
+
+        <div class="url-block target-url">
+          <span class="url-label">Classic Web-Only Query:</span>
+          <div class="url-bar">
+            <span class="domain">https://www.google.com</span><span class="path">/search?q=sourdough+bread</span><span class="param">&amp;udm=14</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="works-explanation">
+        Google provides a built-in search filter called <strong>Web</strong> that displays text-only listings (links, snippets, and page URLs). It is activated by appending the query parameter <code>udm=14</code>. This extension intercepts standard Google search requests and automatically appends this parameter before the request is even transmitted to Google, returning the clean classic lists server-side!
+      </p>
+    </section>
+
+    <!-- Installation Steps Section -->
+    <section id="install" class="install-section">
+      <div class="section-header">
+        <h2 class="section-title">Install in Seconds</h2>
+        <p class="section-desc">Choose your preferred method to load the extension into your browser.</p>
+      </div>
+
+      <div class="install-tabs-container">
+        <!-- Tabs Header Wrapper -->
+        <div class="tabs-header-wrapper">
+          <div class="tabs-header" role="tablist" aria-label="Installation Methods">
+            <button class="tab-btn active" id="tab-stable-btn" data-tab="stable" role="tab" aria-selected="true" aria-controls="tab-stable">📦 From a Release (Recommended)</button>
+            <button class="tab-btn" id="tab-source-btn" data-tab="source" role="tab" aria-selected="false" aria-controls="tab-source">🛠️ From Source (Developers)</button>
+          </div>
+        </div>
+
+        <!-- Tab 1: Stable Release -->
+        <div class="tab-content active" id="tab-stable" role="tabpanel" aria-labelledby="tab-stable-btn">
+          <ol class="step-list">
+            <li>
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <strong>Download the Latest Release:</strong> Get the stable ZIP file from the
+                <a href="https://github.com/dhruvbhavsar0612/strip-ai-mode/releases/latest" target="_blank" rel="noopener" class="inline-link">latest stable release page</a>.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <strong>Unzip the Files:</strong> Extract the contents of the downloaded ZIP archive into a permanent folder on your computer. Keep this folder intact.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <strong>Open Extensions Page:</strong> Type <code>chrome://extensions</code> in your Chrome URL bar and press enter.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <strong>Enable Developer Mode:</strong> Toggle the <strong>Developer mode</strong> switch in the upper right-hand corner of the screen.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <strong>Load Unpacked:</strong> Click the <strong>Load unpacked</strong> button in the top-left and select the unzipped directory containing <code>manifest.json</code>.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">6</div>
+              <div class="step-content">
+                <strong>Pin the Extension:</strong> Click the puzzle-piece icon in your toolbar, and click the pin icon next to <strong>No AI Overviews</strong> to easily control it anytime!
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Tab 2: From Source -->
+        <div class="tab-content" id="tab-source" role="tabpanel" aria-labelledby="tab-source-btn">
+          <ol class="step-list">
+            <li>
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <strong>Clone the Repository:</strong> Clone the project onto your local machine via Git:
+                <pre class="code-block"><code>git clone https://github.com/dhruvbhavsar0612/strip-ai-mode.git</code></pre>
+              </div>
+            </li>
+            <li>
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <strong>Navigate & Open Chrome:</strong> Open Chrome and navigate to <code>chrome://extensions</code>.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <strong>Developer Mode:</strong> Toggle <strong>Developer mode</strong> on in the upper-right corner.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <strong>Load Extension:</strong> Click <strong>Load unpacked</strong> and select the cloned repository folder.
+              </div>
+            </li>
+            <li>
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <strong>Verify Installation:</strong> Search something on Google to confirm AI Overviews are completely removed!
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Got questions about the extension? We've got answers.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
+            <span>What is Google's Web-only mode (udm=14)?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+            <p>Google Search has a built-in, server-side filter called "Web" that hides AI Overviews, featured snippets, advertisements, and knowledge panels. Adding <code>udm=14</code> to the search URL triggers this mode server-side, forcing Google to return only classic blue links.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
+            <span>Does this extension read my search history?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+            <p>No. By using the modern <code>declarativeNetRequest</code> API, the browser handles the URL redirection locally. The extension never reads your page content, records your searches, or contacts external servers. It is 100% private and runs fully client-side.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
+            <span>Will this break when Google changes its layout?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+            <p>No! Because it changes the URL parameters before the page loads instead of injecting JavaScript to modify the HTML page content, it is completely immune to Google Search CSS classes or structural HTML changes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
+            <span>Which browsers are supported?</span>
+            <span class="faq-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+            <p>It works on Google Chrome, Microsoft Edge, Brave, Opera, Arc, and other Chromium-based browsers. It can also run on Mozilla Firefox by declaring a fallback configuration (see developer notes).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Store Assets Display Section -->
+    <section class="assets-display-section">
+      <div class="section-header">
+        <h2 class="section-title">Chrome Web Store Assets</h2>
+        <p class="section-desc">Preview of the high-quality assets generated for the official Chrome Web Store submission.</p>
+      </div>
+      
+      <div class="assets-grid">
+        <div class="asset-card">
+          <h4>Promo Tile (440x280)</h4>
+          <img src="assets/store_promo_tile.png" alt="Promo Tile Asset" class="promo-tile-img" />
+        </div>
+        <div class="asset-card">
+          <h4>Extension Icon (128x128)</h4>
+          <div class="icon-asset-wrapper">
+            <img src="icons/icon128.png" alt="Icon Asset" class="icon-128-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="icons/icon48.png" alt="" class="footer-logo" />
+          <span class="footer-name">No AI Overviews for Google Search</span>
+        </div>
+        <div class="footer-right">
+          <a href="https://github.com/dhruvbhavsar0612/strip-ai-mode" target="_blank" rel="noopener">GitHub Project</a>
+          <a href="https://github.com/dhruvbhavsar0612/strip-ai-mode/issues" target="_blank" rel="noopener">Report Issue</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 strip-ai-mode Project. Distributed under the MIT License.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
