@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../icons/icon48.png" alt="" class="logo" />
+      <h1>No AI Overviews</h1>
+    </header>
+
+    <label class="row" for="toggle">
+      <span class="row-label">Remove AI Overviews</span>
+      <span class="switch">
+        <input type="checkbox" id="toggle" />
+        <span class="slider"></span>
+      </span>
+    </label>
+
+    <p class="help">
+      Uses Google's Web results mode (<code>udm=14</code>) to strip AI Overviews
+      from search results.
+    </p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
