@@ -96,9 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const targetTab = btn.getAttribute('data-tab');
 
-      // Update active button state
-      tabButtons.forEach(b => b.classList.remove('active'));
+      // Update active button state and ARIA attribute
+      tabButtons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
 
       // Update active content display
       tabContents.forEach(content => {
@@ -121,19 +125,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const answer = faqItem.querySelector('.faq-answer');
       const isActive = faqItem.classList.contains('active');
 
-      // Collapse all other FAQ items for a clean single-open layout
+      // Collapse all other FAQ items and reset ARIA attributes
       document.querySelectorAll('.faq-item').forEach(item => {
         item.classList.remove('active');
+        const q = item.querySelector('.faq-question');
+        if (q) q.setAttribute('aria-expanded', 'false');
         item.querySelector('.faq-answer').style.maxHeight = null;
       });
 
-      // Toggle current item
+      // Toggle current item and update ARIA attribute
       if (!isActive) {
         faqItem.classList.add('active');
+        question.setAttribute('aria-expanded', 'true');
         // Set maximum height to scrollHeight for a smooth CSS expand transition
         answer.style.maxHeight = `${answer.scrollHeight}px`;
       } else {
         faqItem.classList.remove('active');
+        question.setAttribute('aria-expanded', 'false');
         answer.style.maxHeight = null;
       }
     });

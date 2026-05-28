@@ -368,6 +368,7 @@ body::before {
   user-select: none;
   background: var(--chrome-bg);
   --mockup-w: 928px; /* Standard internal desktop mockup width (960px container minus 32px borders/paddings) */
+  touch-action: pan-y; /* Prevent page panning on horizontal drag */
 }
 
 /* Mockup Width Responsiveness */

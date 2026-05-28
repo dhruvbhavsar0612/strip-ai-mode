@@ -381,7 +381,7 @@
       </div>
 
       <p class="works-explanation">
-        Google provides a built-in search filter called **Web** that displays text-only listings (links, snippets, and page URLs). It is activated by appending the query parameter <code>udm=14</code>. This extension intercepts standard Google search requests and automatically appends this parameter before the request is even transmitted to Google, returning the clean classic lists server-side!
+        Google provides a built-in search filter called <strong>Web</strong> that displays text-only listings (links, snippets, and page URLs). It is activated by appending the query parameter <code>udm=14</code>. This extension intercepts standard Google search requests and automatically appends this parameter before the request is even transmitted to Google, returning the clean classic lists server-side!
       </p>
     </section>
 
@@ -395,14 +395,14 @@
       <div class="install-tabs-container">
         <!-- Tabs Header Wrapper -->
         <div class="tabs-header-wrapper">
-          <div class="tabs-header">
-            <button class="tab-btn active" data-tab="stable">📦 From a Release (Recommended)</button>
-            <button class="tab-btn" data-tab="source">🛠️ From Source (Developers)</button>
+          <div class="tabs-header" role="tablist" aria-label="Installation Methods">
+            <button class="tab-btn active" id="tab-stable-btn" data-tab="stable" role="tab" aria-selected="true" aria-controls="tab-stable">📦 From a Release (Recommended)</button>
+            <button class="tab-btn" id="tab-source-btn" data-tab="source" role="tab" aria-selected="false" aria-controls="tab-source">🛠️ From Source (Developers)</button>
           </div>
         </div>
 
         <!-- Tab 1: Stable Release -->
-        <div class="tab-content active" id="tab-stable">
+        <div class="tab-content active" id="tab-stable" role="tabpanel" aria-labelledby="tab-stable-btn">
           <ol class="step-list">
             <li>
               <div class="step-num">1</div>
@@ -438,14 +438,14 @@
             <li>
               <div class="step-num">6</div>
               <div class="step-content">
-                <strong>Pin the Extension:</strong> Click the puzzle-piece icon in your toolbar, and click the pin icon next to **No AI Overviews** to easily control it anytime!
+                <strong>Pin the Extension:</strong> Click the puzzle-piece icon in your toolbar, and click the pin icon next to <strong>No AI Overviews</strong> to easily control it anytime!
               </div>
             </li>
           </ol>
         </div>
 
         <!-- Tab 2: From Source -->
-        <div class="tab-content" id="tab-source">
+        <div class="tab-content" id="tab-source" role="tabpanel" aria-labelledby="tab-source-btn">
           <ol class="step-list">
             <li>
               <div class="step-num">1</div>
@@ -469,7 +469,7 @@
             <li>
               <div class="step-num">4</div>
               <div class="step-content">
-                <strong>Load Extension:</strong> Click **Load unpacked** and select the cloned repository folder.
+                <strong>Load Extension:</strong> Click <strong>Load unpacked</strong> and select the cloned repository folder.
               </div>
             </li>
             <li>
@@ -492,49 +492,49 @@
 
       <div class="faq-accordion">
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
             <span>What is Google's Web-only mode (udm=14)?</span>
             <span class="faq-icon">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
             <p>Google Search has a built-in, server-side filter called "Web" that hides AI Overviews, featured snippets, advertisements, and knowledge panels. Adding <code>udm=14</code> to the search URL triggers this mode server-side, forcing Google to return only classic blue links.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
             <span>Does this extension read my search history?</span>
             <span class="faq-icon">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
             <p>No. By using the modern <code>declarativeNetRequest</code> API, the browser handles the URL redirection locally. The extension never reads your page content, records your searches, or contacts external servers. It is 100% private and runs fully client-side.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
             <span>Will this break when Google changes its layout?</span>
             <span class="faq-icon">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
-          <div class="faq-answer">
-            <p>No! Because it changes the URL parameters before the page loads instead of injecting Javascript to modify the HTML page content, it is completely immune to Google Search CSS classes or structural HTML changes.</p>
+          <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+            <p>No! Because it changes the URL parameters before the page loads instead of injecting JavaScript to modify the HTML page content, it is completely immune to Google Search CSS classes or structural HTML changes.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4">
             <span>Which browsers are supported?</span>
             <span class="faq-icon">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </span>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
             <p>It works on Google Chrome, Microsoft Edge, Brave, Opera, Arc, and other Chromium-based browsers. It can also run on Mozilla Firefox by declaring a fallback configuration (see developer notes).</p>
           </div>
         </div>
