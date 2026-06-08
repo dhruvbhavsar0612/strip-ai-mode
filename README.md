@@ -31,6 +31,13 @@ Then follow steps 3-6 above, selecting the cloned folder.
 
 ## Use it
 
+### Demo - click on the image below
+<p align="center">
+  <a href="https://youtu.be/6YE6uCA4wkE">
+    <img src="https://img.youtube.com/vi/6YE6uCA4wkE/hqdefault.jpg" alt="Watch the demo video">
+  </a>
+</p>
+
 - The extension is **on by default** right after install — just search Google
   and the AI Overview is gone.
 - Click the toolbar icon to open the popup and **toggle it on/off** at any time.
